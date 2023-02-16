@@ -1,3 +1,5 @@
+#!/bin/bash
+
 GITHUB_USER="rodriporon"
 ID=$(curl -s "https://api.github.com/users/$GITHUB_USER" | jq -r '.id')
 CREATED_AT=$(curl -s "https://api.github.com/users/$GITHUB_USER" | jq -r '.created_at')
